@@ -1,3 +1,7 @@
+
+let humanScore = 0;
+let computerScore = 0;
+
 console.log("Hello, ready for the game?");
 
 // Get computer choice 
@@ -18,7 +22,10 @@ function getComputerChoice() {
 function getHumanChoice() {
     let humanChoice = prompt("Enter either 'rock', 'sissors', or 'papers'");
 }
-    
+
+let result = getHumanChoice();
+
+console.log(result);
 
 
 

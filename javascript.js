@@ -5,15 +5,19 @@ console.log("Hello, ready for the game?");
 
 
 function getComputerChoice() {
-    let preGeneratedValue = Math.floor(Math.random() * 3 + 1);
-    if (preGeneratedValue === 1) {
+    let computerChoice = Math.floor(Math.random() * 3 + 1);
+    if (computerChoice === 1) {
         return "rock";
-    } else if (preGeneratedValue === 2) {
+    } else if (computerChoice === 2) {
         return "sissors";
-    }  else if (preGeneratedValue === 3) {
+    }  else if (computerChoice === 3) {
       }
         return "papers"; 
     }
+
+function getHumanChoice() {
+    let humanChoice = prompt("Enter either 'rock', 'sissors', or 'papers'");
+}
     
 
 

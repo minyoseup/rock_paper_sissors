@@ -2,7 +2,7 @@
 let humanScore = 0;
 let computerScore = 0;
 
-console.log("Hello, ready for the game?");
+console.log("Hello, ready for the games?");
 
 // Get computer choice 
 function getComputerChoice() {
@@ -47,7 +47,21 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
-playRound(getHumanChoice(), getComputerChoice()); 
+function playGame() {   
+    for (let i = 0; i < 5; i++) {
+        humanChoice = getHumanChoice();
+        computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
+}
 
+// computer final winner
+
+let finalWinner = 
+
+playGame();
+
+console.log(humanScore);
+console.log(computerScore);
 
 

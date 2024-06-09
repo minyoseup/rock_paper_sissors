@@ -49,17 +49,26 @@ function playRound(humanChoice, computerChoice) {
 
 function playGame() {   
     for (let i = 0; i < 5; i++) {
+        alert(`this is round ${i+1}`);
         humanChoice = getHumanChoice();
         computerChoice = getComputerChoice();
         playRound(humanChoice, computerChoice);
     }
 }
 
-// computer final winner
 
-let finalWinner = 
+
 
 playGame();
+
+// computer final winner
+let finalWinner = 0;
+if (humanScore > computerScore) {
+    alert('You have won the game!');
+ } else {
+        alert('Computer wins! Better luck next time :(');
+ }
+ 
 
 console.log(humanScore);
 console.log(computerScore);
